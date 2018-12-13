@@ -1,2 +1,4 @@
 # foldingathome
-By downloading the Folding@home software you are supplying us with the computer power we need to find new cures. And by spreading the word you’re giving even more people the chance to contribute. In our book, that certainly makes you one in a million. https://foldingathome.org
+Folding@home (FAH or F@h) is a distributed computing project for disease research that simulates protein folding, computational drug design, and other types of molecular dynamics. As of today, the project is using the idle resources of personal computers owned by volunteers from all over the world. Thousands of people contribute to the success of this project.
+
+Learn more at https://foldingathome.org.
