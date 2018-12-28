@@ -1,7 +1,7 @@
 <config>
   <user value="{{USERNAME}}"/>
   <team value="{{TEAM}}"/>
-  <passkey value=""/>
+  <passkey value="{{PASSKEY}}"/>
 
   <power value="{{POWER}}"/>
   <gpu value="false"/>
