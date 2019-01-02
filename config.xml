@@ -4,6 +4,7 @@
   <passkey value="{{PASSKEY}}"/>
 
   <power value="{{POWER}}"/>
+  <cpus value="{{CPUS}}"/>
   <gpu value="false"/>
   <fold-anon value="false"/>
 </config>
