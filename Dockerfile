@@ -7,7 +7,6 @@ ENV DOWNLOAD=https://download.foldingathome.org/releases/public/release/fahclien
 
 RUN apt-get update && apt-get -y install bzip2 wget openvpn
 
-
 ADD config.xml /etc/fahclient/
 RUN cp /etc/fahclient/config.xml /etc/fahclient/config_template.xml
 RUN sed -i -e "s/{{USERNAME}}/Anonymous/;s/{{TEAM}}/0/;s/{{POWER}}/medium/" /etc/fahclient/config.xml
@@ -16,7 +15,6 @@ RUN cp /etc/fahclient/config.xml /etc/fahclient/config_install.xml
 RUN mkdir -p /home/root/ && wget -O /home/root/fahclient.deb ${DOWNLOAD} && dpkg -i /home/root/fahclient.deb && rm /home/root/fahclient.deb
 
 ADD entrypoint.sh /home/root/entrypoint.sh
-RUN chmod 751 /home/root/entrypoint.sh
-RUN chown fahclient:root /etc/fahclient/config.xml
+RUN chmod 751 /home/root/entrypoint.sh && chown fahclient:root /etc/fahclient/config.xml
 
 ENTRYPOINT [ "/home/root/entrypoint.sh" ]

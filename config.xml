@@ -5,6 +5,7 @@
 
   <power value="{{POWER}}"/>
   <cpus value="{{CPUS}}"/>
+  <cause value="{{CAUSE}}"/>
   <gpu value="false"/>
   <fold-anon value="false"/>
 </config>
