@@ -3,10 +3,28 @@ Folding@home (FAH or F@h) is a distributed computing project for disease researc
 
 Learn more at https://foldingathome.org.
 
-## usage
+## Usage
 
 To run the continer with default values:
 ``docker run robertnetz/foldingathome:7.4.4_amd64``
 
 You can also pass some environment variables using:
 ``docker run -e USERNAME=johndoe -e TEAM=45700 -e POWER=FULL robertnetz/foldingathome:7.4.4_amd64``
+
+## Supported environment parameters
+
+* USERNAME
+* TEAM
+* PASSKEY
+* POWER
+  * LIGHT
+  * MEDIUM
+  * FULL
+* CPUS
+* CAUSE
+  * ANY *(default)*
+  * ALZHEIMERS
+  * CANCER
+  * HUNTINGTONS
+  * PARKINSONS
+

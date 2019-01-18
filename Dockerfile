@@ -5,7 +5,7 @@ ENV TEAM=0
 ENV POWER=medium
 ENV DOWNLOAD=https://download.foldingathome.org/releases/public/release/fahclient/debian-stable-64bit/v7.5/fahclient_7.5.1_amd64.deb
 
-RUN apt-get update && apt-get -y install bzip2 wget openvpn
+RUN apt-get update && apt-get -y install bzip2 wget
 
 ADD config.xml /etc/fahclient/
 RUN cp /etc/fahclient/config.xml /etc/fahclient/config_template.xml
