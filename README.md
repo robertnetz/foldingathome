@@ -6,25 +6,18 @@ Learn more at https://foldingathome.org.
 ## Usage
 
 To run the continer with default values:
-``docker run robertnetz/foldingathome:7.4.4_amd64``
+``docker run robertnetz/foldingathome:7.5.1_amd64``
 
 You can also pass some environment variables using:
-``docker run -e USERNAME=johndoe -e TEAM=45700 -e POWER=FULL robertnetz/foldingathome:7.4.4_amd64``
+``docker run -e USERNAME=johndoe -e TEAM=45700 -e POWER=FULL robertnetz/foldingathome:7.5.1_amd64``
 
-## Supported environment parameters
+The following environment variables are available:
 
-* USERNAME
-* TEAM
-* PASSKEY
-* POWER
-  * LIGHT
-  * MEDIUM
-  * FULL
-* CPUS
-* CAUSE
-  * ANY *(default)*
-  * ALZHEIMERS
-  * CANCER
-  * HUNTINGTONS
-  * PARKINSONS
-
+|Environment Variable|Description|Default Value|Available Values|
+| ------------- |:-------------|:-------------|:-----|
+|USERNAME|your donor id|1437|*(any donor id)*|
+|TEAM|the team to contribute to|0|*(any team id)*|
+|PASSKEY|a passkey if you like to use one|*(empty)*|*(passkey)*|
+|POWER|power utilization|FULL|LIGHT, MEDIUM, FULL|
+|CPUS|number of cpus to use|*(all)*|*(integer)*|
+|CAUSE|project category to contribute to|ANY|ANY, ALZHEIMERS, CANCER, HUNTINGTONS, PARKINSONS|
