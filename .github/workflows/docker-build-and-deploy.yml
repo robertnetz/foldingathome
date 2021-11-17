@@ -1,0 +1,25 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: docker login
+      env:
+        DOCKER_USER: ${{secrets.DOCKERHUB_ID}}
+        DOCKER_PASSWORD: ${{secrets.DOCKERHUB_ACCESS_TOKEN}}
+      run: |
+        docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag robertnetz/foldingathome:7.6.21_amd64
+      
+    - name: Docker Push
+      run: docker push robertnetz/foldingathome:7.6.21_amd64

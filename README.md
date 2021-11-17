@@ -6,10 +6,10 @@ Learn more at https://foldingathome.org.
 ## Usage
 
 To run the continer with default values:
-``docker run robertnetz/foldingathome:7.5.1_amd64``
+``docker run robertnetz/foldingathome:7.6.21_amd64``
 
 You can also pass some environment variables using:
-``docker run -e USERNAME=johndoe -e TEAM=45700 -e POWER=FULL robertnetz/foldingathome:7.5.1_amd64``
+``docker run -e USERNAME=johndoe -e TEAM=45700 -e POWER=FULL robertnetz/foldingathome:7.6.21_amd64``
 
 The following environment variables are available:
 

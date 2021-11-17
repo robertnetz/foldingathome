@@ -3,7 +3,7 @@ FROM debian:stretch-slim
 ENV USERNAME=Anonymous
 ENV TEAM=0
 ENV POWER=medium
-ENV DOWNLOAD=https://download.foldingathome.org/releases/public/release/fahclient/debian-stable-64bit/v7.5/fahclient_7.5.1_amd64.deb
+ENV DOWNLOAD=https://download.foldingathome.org/releases/public/release/fahclient/debian-stable-64bit/v7.6/fahclient_7.6.21_amd64.deb
 
 RUN apt-get update && apt-get -y install bzip2 wget
 
