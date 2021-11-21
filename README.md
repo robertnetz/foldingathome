@@ -3,6 +3,8 @@ Folding@home (FAH or F@h) is a distributed computing project for disease researc
 
 Learn more at https://foldingathome.org.
 
+[![Docker Image CI](https://github.com/robertnetz/foldingathome/actions/workflows/docker-build-and-deploy.yml/badge.svg?branch=master)](https://github.com/robertnetz/foldingathome/actions/workflows/docker-build-and-deploy.yml)
+
 ## Usage
 
 To run the continer with default values:
